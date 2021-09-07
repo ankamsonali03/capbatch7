@@ -1,7 +1,10 @@
 package com.abc.dao;
 
+import org.springframework.stereotype.Repository;
+
 import com.abc.bean.Employee;
 
+@Repository
 public class EmployeeDao {
 	
 	public Employee addEmployee() {

@@ -10,7 +10,7 @@ public class EmployeeMain {
 		
 		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("appcontext.xml");
 		
-		EmployeeController controller = (EmployeeController) context.getBean("empController");
+		EmployeeController controller = (EmployeeController) context.getBean(EmployeeController.class);
 		
 		controller.createEmployee();
 		

@@ -1,15 +1,16 @@
 package com.abc.controller;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+
 import com.abc.bean.Employee;
 import com.abc.service.EmployeeService;
 
+@Controller
 public class EmployeeController {
 
+	@Autowired
 	private EmployeeService empService;	
-	
-	public void setEmpService(EmployeeService empService) {
-		this.empService = empService;
-	}
 	
 	public void createEmployee() {
 		
