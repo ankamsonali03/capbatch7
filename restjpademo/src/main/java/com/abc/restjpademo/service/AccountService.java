@@ -10,6 +10,12 @@ public interface AccountService {
 	
 	public Account fetchAccoutByAccno(int accno);
 	
+	public List<Account> fetchAccountsByName(String name);
+	
 	public List<Account> fetchAllAccounts();
+	
+	public void updateAccount(Account account);
+	
+	public void deleteAccount(int accno);
 
 }
